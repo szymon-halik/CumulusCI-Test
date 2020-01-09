@@ -2,6 +2,7 @@
 public with sharing class SampleClass_TEST {
 
     public static testmethod void fillInFirstNameTest() {
+		System.assertEquals('a', 'b');
     	SampleClass myClass = new SampleClass();
     	Contact contact = new Contact(LastName = 'Testerson');
 		Test.startTest();

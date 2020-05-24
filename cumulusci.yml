@@ -15,6 +15,14 @@ project:
         repo_dir: ApexDocumentation
 
 tasks:
+    list_contacts:
+        description: Prints out 10 Contacts from the target org using the Enterprise API
+        class_path: tasks.salesforce.ListContacts
+        
+    list_apex_classes:
+        description: Prints out 10 ApexClasses from the target org using the Tooling API
+        class_path: tasks.salesforce.ListApexClasses
+
     named_sleep:
         description: sleeps, and has a name
         class_path: tasks.example.StaticSleep
